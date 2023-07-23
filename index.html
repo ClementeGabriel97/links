@@ -5,49 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
+    * {
+  border: thin red solid;
+}
 
 .items{
   display:flex;
   flex-direction: column;
   gap: 30px;
-  max-width: 400px;
+  max-width: 550px;
+  flex-grow: 1;
 }
-    body{
-      background-color: #127a75;
-      padding-top: 40px;
-      padding-bottom: 40px;
+body{
+   background-color: #127a75;
+   padding-top: 40px;
+   padding-bottom: 40px;
+   display: flex;
+   justify-content: center;
     }
 
     
 .name {
   color: #fffffe;
+  justify-content: center;
 }
 
 .social-icons a {
   color: #fffffe;
   text-decoration: none;
+  justify-content: space-around;
 }
 
 .link {
   background-color: #4b34db;
   display: flex;
   align-items: center;
+  padding: 5px;
 }
 
 .link a {
   color: #001e1d;
   text-decoration: none;
   text-align: center;
+  flex-grow: 1;
+
 }
+
  
-    .banner-image{
+.banner-image{
       width: 128px;
       height: 128px;
       object-fit: cover;
       border-radius: 128px;
+      justify-content: center;
     }
  
-    .thumbnail{
+.thumbnail{
       width: 48px;
       height: 48px;
       border-radius: 48px;
